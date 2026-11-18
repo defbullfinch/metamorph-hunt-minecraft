@@ -3,7 +3,6 @@ package com.metamorph.hunt.entity;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.tags.ItemTags;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.PathfinderMob;
@@ -24,7 +23,7 @@ public class MetamorphEntity extends PathfinderMob {
 
     private static final float START_HP = 200f;
     private static final float ESCAPE_LIMIT = 6f;
-    private static final boolean SHOW_HIT_COUNTER = false;
+    private static final boolean SHOW_HIT_COUNTER = true;
 
     private float hiddenHp = START_HP;
     private int hits = 0;
