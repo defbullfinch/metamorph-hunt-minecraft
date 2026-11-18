@@ -101,7 +101,7 @@ public class MetamorphEntity extends PathfinderMob {
             return false;   // під час втечі й регенерації невразливий
         }
 
-        float damage = player.getMainHandItem().is(ItemTags.AXES) ? 19f : 7f;
+        float damage = amount;
         hits++;
         if (hits == 1) {
             firstHitTick = tickCount;
